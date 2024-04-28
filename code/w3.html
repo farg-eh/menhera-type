@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image:linear-gradient(black, white);
+  mask-image: linear-gradient(black, white);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-mode: luminance;
+}
+
+.mask2 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image:linear-gradient(black, transparent);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-mode: alpha;
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-mode Property</h1>
+
+<p><strong>Note:</strong> The mask-mode property only works in Firefox!</p>
+
+<h3>Let the mask layer image be treated as a luminance mask:</h3>
+<div class="mask1">
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Let the mask layer image be treated as an alpha mask:</h3>
+<div class="mask2">
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>

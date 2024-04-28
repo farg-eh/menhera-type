@@ -14,6 +14,15 @@ body
     position: absolute;
     top: 0; left: 0;
     width: 100%;
+/*    border: 3px solid green;*/
+}
+.header .logo-anchor{
+    text-decoration: none;
+/*    border: 2px solid purple;*/
+    display: inline-block;
+    width: 330px;
+    height: 65px;
+    float: left;
 }
 .header h1
 {
@@ -26,6 +35,48 @@ body
     height: 60px;
     margin: 8px;
 }
+
+.header .navi {
+    float: left;
+/*    border: 3px solid red;*/
+    display: inline-block;
+    height: 36px;
+    margin-top: 23px;
+    margin-left: 20px;
+}
+.header .navi .navicon {
+    float: left;
+    position: relative;
+/*    border: 3px solid yellow;*/
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+
+}
+
+.header .navi .navicon img {
+
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    transition: all 0.3s;
+
+}
+
+.header .navi .navicon img:hover {
+
+    width: 28px;
+    height: 28px;
+    transform: translate(-2px, -2px);
+
+/*    filters*/
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+
+
+}
+ /*masks*/
 
 .menu-container
 {
@@ -76,6 +127,7 @@ body
 {
     font-size: 15px;
     margin: 0px 20px;
+    max-width: 60%;
     text-align: left;
     color: #444444;
 }
@@ -117,7 +169,11 @@ body
     cursor: pointer;
 }
 
-body>h1{
+.content{
+    position: relative;
+}
+
+.content>h1{
     margin-left: 20px;
     color: #fff;
     font-size: 50px;
@@ -126,7 +182,7 @@ body>h1{
 }
 
 
-body>p{
+.content>p{
     margin-left: 40px;
     color: #fff;
     font-size: 20px;
@@ -134,7 +190,7 @@ body>p{
     font-family: roboto, sans-serif;
 }
 
-body>ul{
+.content>ul{
     margin: 30px;
     margin-left: 40px;
     color: #fff;
@@ -143,14 +199,14 @@ body>ul{
     font-family: roboto, sans-serif;
 }
 
-body>.bg-peek{
+.content>.bg-peek{
         position: absolute;
         right: 0px;
-        top: 145%;
+        top: 15%;
         width: 260px;
         overflow: hidden;
 }
-body>.bg-peek>img{
+.content>.bg-peek>img{
     width: 512px;
     height: 512px;
 }
@@ -162,7 +218,7 @@ body>.bg-peek>img{
     width: 100%;
     height: 90px;
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), transparent);
+    background: linear-gradient(0deg, rgba(25, 0, 0, 0.1), transparent);
     margin: 0px;
     padding: 0px;
 
@@ -187,9 +243,13 @@ body>.bg-peek>img{
     font-size: 14px;
     font-family: arial;
     display: inline-block;
-    color: white;
+    color: #ddd;
     text-decoration: none;
     padding: 2px;
     margin: 8px 18px;
+    transition: all 0.2s;
+}
 
+.footer li>a:hover{
+    color: white;
 }
