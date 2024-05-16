@@ -5,6 +5,7 @@ body
     background: linear-gradient(#fcfcf8, #f37f83, #f37f83);
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
 
 }
 
