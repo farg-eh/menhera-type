@@ -60,7 +60,7 @@ body
     width: 24px;
     height: 24px;
     margin: 0px;
-    transition: all 0.3s;
+    transition: all 0.3s ;
 
 }
 
@@ -70,9 +70,10 @@ body
     height: 28px;
     transform: translate(-2px, -2px);
 
-/*    filters*/
     -webkit-filter: brightness(120%);
-    filter: brightness(120%);
+/*    filters*/
+    filter: brightness(125%);
+
 
 
 }
@@ -252,4 +253,17 @@ body
 
 .footer li>a:hover{
     color: white;
+}
+
+ /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ canvas ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#myCanvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline;
+    overflow: hidden;
+
+/*    border: 5px solid black;*/
+    z-index: -1;
 }
