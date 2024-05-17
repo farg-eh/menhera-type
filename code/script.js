@@ -29,7 +29,7 @@ class Particle
         this.x = this.radius +  Math.random() * (width - this.radius * 2);
         this.y = height + this.radius * 2 + 10;
 
-        this.speed = 0.7 + (Math.random()/2);
+        this.speed = 0.9 + (Math.random()/4);
         this.dx = 0;
         this.dy = -1;
 
@@ -148,6 +148,6 @@ function update() {
 }
 
 // timers
-setInterval(effect.createPs.bind(effect), 2300);
+setInterval(effect.createPs.bind(effect), 4300);
 
 update();

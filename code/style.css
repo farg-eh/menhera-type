@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body, html
+body
 {
     background-color: #fcfcf8;
     background: linear-gradient(#fcfcf8, #f37f83, #f37f83);
@@ -149,6 +149,16 @@ body, html
     height: 220px;
 }
 
+
+#end img{
+    width: 250px;
+    height: 250px;
+    bottom: -20px;
+    right: 65px;
+}
+
+
+
 .box button {
     position: absolute;
     bottom: 25px;
@@ -217,6 +227,37 @@ body, html
     width: 512px;
     height: 512px;
 }
+
+/*  if the screen is to tiny */
+@media(max-width: 640px){
+    /* the image in the last box */
+   #end img{
+        right: 0px;
+        width: 240px;
+    }
+    #end p{
+     max-width: 40%;
+    }
+
+    .content>.bg-peek {
+     right: -55px;
+    }
+
+    .content>h1{
+    font-size: 40px;
+
+    }
+
+
+    .content>p{
+        font-size: 16px;
+    }
+
+    .content>ul{
+        font-size: 16px;
+    }
+}
+
 .footer
 {
    /* background-color: #f37f83;*/
@@ -270,6 +311,6 @@ body, html
     display: inline;
     overflow: hidden;
 
-/*    border: 5px solid black;*/
+/*     border: 5px solid black; */
     z-index: -1;
 }
