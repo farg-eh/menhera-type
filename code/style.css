@@ -229,7 +229,7 @@ body
 }
 
 /*  if the screen is to tiny */
-@media(max-width: 640px){
+@media(max-width: 780px){
     /* the image in the last box */
    #end img{
         right: 0px;
