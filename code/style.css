@@ -240,7 +240,8 @@ body
     }
 
     .content>.bg-peek {
-     right: -55px;
+     width:205px;
+
     }
 
     .content>h1{
