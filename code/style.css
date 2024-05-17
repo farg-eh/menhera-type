@@ -236,27 +236,30 @@ body
         width: 240px;
     }
     #end p{
-     max-width: 80%;
+     max-width: 40%;
     }
 
     .content>.bg-peek {
-     width:204px;
-     overflow: hidden;
+        visibility: hidden;
 
     }
 
     .content>h1{
     font-size: 40px;
+    max-width: 80%
 
     }
 
 
     .content>p{
         font-size: 16px;
+        max-width: 80%;
+
     }
 
     .content>ul{
         font-size: 16px;
+        max-width: 75%;
     }
 }
 
