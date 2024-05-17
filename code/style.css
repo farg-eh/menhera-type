@@ -240,7 +240,8 @@ body
     }
 
     .content>.bg-peek {
-     width:205px;
+     width:204px;
+     overflow: hidden;
 
     }
 
